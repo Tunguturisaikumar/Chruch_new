@@ -51,7 +51,7 @@ export class GlobeViewComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
     this.startQuoteRotation();
 
-    const apiUrl = 'https://server-486354915183.europe-west1.run.app';
+    const apiUrl = 'https://servernew-486354915183.europe-west1.run.app';
     this.http.get<ChurchData[]>(apiUrl).subscribe({
       next: (data: ChurchData[]) => {
         if (data && data.length > 0) {
